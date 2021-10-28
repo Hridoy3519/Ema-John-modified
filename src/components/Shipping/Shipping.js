@@ -15,7 +15,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://shrouded-fortress-40262.herokuapp.com/orders', {
             method: 'POST',
             headers : {
                 'content-type': "application/json"

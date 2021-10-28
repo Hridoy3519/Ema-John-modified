@@ -9,7 +9,7 @@ const useCart = () => {
         const savedCart = getStoredCart();
         const keys = Object.keys(savedCart);
 
-        fetch('http://localhost:5000/products/byKeys', {
+        fetch('https://shrouded-fortress-40262.herokuapp.com/products/byKeys', {
             method: 'POST',
             headers: {
                 'content-type': "application/json"
